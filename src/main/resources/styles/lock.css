@@ -1,0 +1,43 @@
+.tab-pane {
+    min-height: 200px; /* Устанавливаем минимальную высоту для вкладки */
+}
+
+.d-flex.flex-row {
+    align-items: center; /* Центрируем содержимое по вертикали */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+.lock {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lock::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border: 5px solid #999;
+    border-bottom: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lock::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 45px;
+    width: 10px;
+    height: 5px;
+    background-color: #999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
